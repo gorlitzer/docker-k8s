@@ -49,3 +49,16 @@ docker rmi [imagename]
 # removes all images not in use by any container
 docker system prune -a 
 ```
+
+## Building - Docker CLI
+
+```
+# build image using Dockerfile located in the same folder
+docker build -t [name:tag] .
+
+# build image using Dockerfile located in a different folder
+docker build -t [name:tag] -f [filename]
+
+# tag an existing image
+docker tag [imageName] [name:tag]
+```
