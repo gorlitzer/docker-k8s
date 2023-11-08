@@ -25,7 +25,7 @@ docker run -it nginx -- /bin/bash
 docker run -it -- microsoft/powershell:nanoserver
 
 # attach to a running container
-docker container exec -it [containername] -- bash 
+docker container exec -it [containername] bash 
 ```
 
 ## Cleaing up - Docker CLI
