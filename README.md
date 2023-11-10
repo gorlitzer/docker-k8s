@@ -1,9 +1,11 @@
 # Docker
 
 ## Running a container
-```
+```bash
 # pull and run an nginx server
 docker run --publish 80:80 --name webserver nginx
+
+docker run --rm -d -p 3000:3000/tcp [containername]:[tag]
 
 # list rinning containers
 docker ps
@@ -17,7 +19,7 @@ docker rm webserver
 
 ## Attach Shell - Docker CLI
 
-```
+```bash
 # attach shell
 docker run -it nginx -- /bin/bash
 
@@ -33,7 +35,7 @@ docker cp <src-path> <container>:<dest-path>
 
 ## Cleaing up - Docker CLI
 
-```
+```bash
 # removes stopped container
 docker rm [containername]
 
@@ -52,7 +54,7 @@ docker system prune -a
 
 ## Building - Docker CLI
 
-```
+```bash
 # build image using Dockerfile located in the same folder
 docker build -t [name:tag] .
 
