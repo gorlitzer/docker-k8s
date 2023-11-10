@@ -64,3 +64,24 @@ docker build -t [name:tag] -f [filename]
 # tag an existing image
 docker tag [imageName] [name:tag]
 ```
+
+## Persist Data
+
+The data should be stored outside the container in a Volume. A Volume is mapped to a logical folder.
+
+```bash
+# creates a new volume
+docker create volume [volumeName]
+
+# lists the volumes
+docker volume ls
+
+# display the volume info
+docker  volume inspect [volumeName]
+
+# deletes a volume
+docker  volume rm [volumeName]
+
+# deletes all volumes not mounted
+docker volume prune
+```
