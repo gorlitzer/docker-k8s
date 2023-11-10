@@ -87,4 +87,7 @@ docker volume prune
 
 # run a container with a volume (logical folder already created)
 docker run -d --name devtest -v myvol:/app nginx:latest
+
+# inspect the container
+docker inspect devtest
 ```
