@@ -84,4 +84,7 @@ docker  volume rm [volumeName]
 
 # deletes all volumes not mounted
 docker volume prune
+
+# run a container with a volume (logical folder already created)
+docker run -d --name devtest -v myvol:/app nginx:latest
 ```
